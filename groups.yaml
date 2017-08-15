@@ -1,0 +1,113 @@
+my_default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.awesome_people
+    - group.weather
+    - group.speedtest
+    - group.radio
+    - group.lys
+    - media_player.chromecast_audio
+    - media_player.TV
+    - group.automation
+    - group.kalender
+    - sun.sun
+audio:
+  name: Chromecast audio
+  icon: mdi:speaker
+  view: yes
+  entities:
+    - media_player.garage
+    - media_player.kkken
+    - media_player.toilet
+    - media_player.hele_huset
+video:
+  name: TV
+  view: yes
+  icon: mdi:television
+  entities:
+    - media_player.tv_vrelse
+    - media_player.stue_tv
+    - media_player.sony_stue_tv
+automation:
+  name: automation
+  entities:
+    - automation.velkommen_hjem_besked
+    - automation.fyraften
+Dev:
+  view: yes
+  name: developer
+#  entities:
+#    - sensor.zigbee_lights
+#    - sensor.zigbee_sensors
+weather:
+  name: Vejr
+  entities:
+    - sensor.vejr_symbol
+    - sensor.vejr_temperature
+    - sensor.arduino_temperature
+    - sensor.vejr_humidity
+    - sensor.vejr_precipitation
+    - sensor.vejr_pressure
+    - sensor.vejr_wind_direction
+    - sensor.vejr_wind_speed
+speedtest:
+  name: Internet hastighed
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+awesome_people:
+  name: Smukke mennesker
+  entities:
+    - device_tracker.fuglphoenix_nexus5x
+    - sensor.transport_tid_for_nikolaj_offentlig
+    - sensor.transport_tid_for_nikolaj_bil
+    - sensor.breaches_fuglphoenixgmailcom
+    - device_tracker.nexus5xkaren
+    - sensor.breaches_karenklitlundgmailcom
+
+radio:
+  name: Afspil radio
+  entities:
+  - input_select.radio_station
+  - input_select.chromecast_radio
+  - script.minradio
+  - input_slider.volume_radio
+lys:
+  name: lyskilder
+  entities:
+  - light.dimmer_2_level
+  - sensor.dimmer_2_power
+  - sensor.dimmer_2_energy
+kalender:
+  name: Kalender
+unknown:
+  name: ikke identificerede funktioner
+  entities:
+  - light.dimmer_2_level_2
+  - sensor.dimmer_2_power_2
+  - sensor.dimmer_2_alarm_level
+  - sensor.dimmer_2_alarm_type
+  - sensor.dimmer_2_exporting
+  - sensor.dimmer_2_heat
+  - sensor.dimmer_2_power_management
+  - sensor.dimmer_2_sourcenodeid
+  - sensor.dimmer_2_system
+  - switch.wallmote_switch
+  - sensor.wallmote_alarm_level
+  - sensor.wallmote_alarm_type
+  - sensor.wallmote_power_management
+  - sensor.wallmote_sourcenodeid
+zwave:
+  name: Zwave
+  entities:
+  - zwave.wallmote
+  - zwave.dimmer_2
+  - zwave.zwave_controller
+zigbee:
+  name: zigbee
+  entities:
+  - sensor.zigbee_lights
+  - sensor.zigbee_sensors
+#  entities:
+#  - sensor.template_calendar

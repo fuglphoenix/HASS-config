@@ -1,0 +1,191 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret house_lat
+  longitude: !secret house_lon
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Copenhagen
+
+  customize: !include customize.yaml
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  # api_password: PASSWORD
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+updater:
+  include_used_components: true
+# Discover some devices automatically
+discovery:
+
+hassio:
+
+zwave:
+  usb_path: /dev/ttyACM0
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+  include:
+    domains:
+      - sensor
+      - media_player
+      - sun
+    entities:
+      - device_tracker.fuglphoenix_nexus5x
+      - device_tracker.nexus5xkaren
+  exclude:
+#    domains:
+#      - automation
+#      - weblink
+#      - updater
+    entities:
+      - sensor.zigbee_all
+#      - sensor.yr_symbol
+#      - sensor.last_boot
+#      - sensor.date
+
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Text to speech
+tts:
+  platform: google
+  language: 'da'
+
+group: !include groups.yaml
+
+media_player: !include media_players.yaml
+
+sensor: !include sensors.yaml
+
+automation: !include automations.yaml
+
+script: !include scripts.yaml
+
+mqtt:
+  broker: m21.cloudmqtt.com
+  port: 22987
+  username: !secret mqtt_user
+  password: !secret mqtt_password
+  discovery: true
+  #discovery_prefix: owntracks
+
+google:
+  client_id: !secret google_api_id
+  client_secret: !secret google_api_secret
+
+panel_iframe:
+  deconz:
+    title: 'deCONZ'
+    url: 'http://hassio.local:80/'
+    icon: mdi:chart-donut-variant
+
+device_tracker:
+#  - platform: nmap_tracker
+#    hosts: 10.0.0.1/24
+  - platform: linksys_smart
+    host: 10.0.0.1
+    home_interval: 10
+    consider_home: 0:15
+    track_new_devices: no
+    exlude:
+     - 10.0.0.1
+  - platform: owntracks
+    max_gps_accuracy: 50
+    waypoints: true
+input_slider:
+  volume_radio:
+    name: Volume
+    icon: mdi:volume-high
+    initial: 0.3
+    min: 0
+    max: 1
+    step: 0.05
+
+input_select:
+  radio_station:
+    name: 'Station:'
+    options:
+      - P2
+      - P3
+      - P4
+      - P6 beat
+      - P7 MIX
+      - P8 JAZZ
+    initial: P4
+    icon: mdi:radio
+  chromecast_radio:
+    name: 'Højtaler:'
+    options:
+      - Stue
+      - Garage
+      - Toilet
+      - Hele huset
+    initial: Stue
+    icon: mdi:speaker-wireless
+
+#service: tts.snak_dansk
+#data_template:
+#    tts.google_say: {{"message":"", "language":"da", "entity_id":"media_player.kkken"}}
+
+zone:
+  name: Home
+  latitude: !secret home_lat
+  longitude: !secret home_lon
+  radius: 100
+  icon: mdi:home
+
+zone 2:
+  name: Arbejde(Nikolaj)
+  latitude: !secret workN_lat
+  longitude: !secret workN_lon
+  radius: 100
+  icon: mdi:factory
+
+zone 3:
+  name: Arbejde(Nikolaj)
+  latitude: !secret workN2_lat
+  longitude: !secret workN2_lon
+  radius: 100
+  icon: mdi:factory
+  
+zone 4:
+  name: Arbejde(Karen)
+  latitude: !secret workK_lat
+  longitude: !secret workK_lon
+  radius: 200
+  icon: mdi:factory
+
+zone 5:
+  name: Christiane & Carsten
+  latitude: !secret homeCC_lat
+  longitude: !secret homeCC_lon
+  radius: 100
+  icon: mdi:home
+
+zone 6:
+  name: Erna & Jens
+  latitude: !secret homeEJ_lat
+  longitude: !secret homeEJ_lon
+  radius: 100
+  icon: mdi:home

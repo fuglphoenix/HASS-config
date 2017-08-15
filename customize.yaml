@@ -1,0 +1,31 @@
+sensor.arduino_temperature:
+  icon: mdi:thermometer
+script.minradio:
+  friendly_name: Start Playing
+  icon: mdi:play
+sensor.vejr_wind_speed:
+  friendly_name: Vind
+  icon: mdi:speedometer
+sensor.vejr_humidity:
+  friendly_name: Luftfugtighed
+  icon: mdi:water-percent
+sensor.vejr_precipitation:
+  friendly_name: Regn
+  icon: mdi:weather-rainy
+sensor.vejr_pressure:
+  friendly_name: Tryk
+  icon: mdi:relative-scale
+sensor.vejr_symbol:
+  friendly_name: Nuværende vejr
+sensor.vejr_temperature:
+  friendly_name: Temperatur
+  icon: mdi:thermometer
+sensor.vejr_wind_direction:
+  friendly_name: Vindretning (0 = fra nord)
+  icon: mdi:compass-outline
+sensor.transport_tid_for_nikolaj_offentlig:
+  friendly_name: Offentlig -> hjem
+  icon: mdi:bus
+sensor.transport_tid_for_nikolaj_bil:
+  friendly_name: Bil -> hjem
+  icon: mdi:car

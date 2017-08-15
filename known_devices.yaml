@@ -1,0 +1,161 @@
+#Devices
+fuglphoenix_nexus5x:
+  hide_if_away: false
+  #mac: 64:BC:0C:80:0C:F5
+  name: Nikolaj
+  track: true
+  picture: https://lh3.googleusercontent.com/-KvxgR6cZ8Lk/AAAAAAAAAAI/AAAAAAAAB6k/zB-PUG8Xuuo/photo.jpg
+  #gravatar: fuglphoenix@gmail.com
+  vendor: LG Electronics (Mobile Communications)
+
+nexus5xkaren:
+  hide_if_away: false
+  mac: 64:BC:0C:80:1D:E4
+  name: Karen
+  picture: https://yt3.ggpht.com/-WUjLk6ulRsE/AAAAAAAAAAI/AAAAAAAAAAA/jUumh4X1lp0/s900-c-k-no-mo-rj-c0xffffff/photo.jpg
+  track: true
+  vendor: LG Electronics (Mobile Communications)
+
+nikolajpc:
+  hide_if_away: false
+  icon:
+  mac: 44:85:00:68:B3:0C
+  name: NIKOLAJ-PC
+  picture:
+  track: false
+  vendor: Intel Corporate
+
+sjsurface066:
+  hide_if_away: false
+  icon:
+  mac: AC:3F:A4:4F:D4:92
+  name: SJSURFACE066
+  picture:
+  track: false
+  vendor: TAIYO YUDEN CO.,LTD
+
+android_tablet:
+  hide_if_away: false
+  icon:
+  mac: B4:CE:F6:09:D3:AC
+  name: android Tablet
+  picture:
+  track: false
+  vendor: HTC Corporation
+
+bortyslinksysrouter:
+  hide_if_away: false
+  icon:
+  mac: 48:F8:B3:E1:38:22
+  name: BortysLinksysRouter
+  picture:
+  track: false
+  vendor: Cisco-Linksys, LLC
+
+chromecasts_enheder:
+  hide_if_away: false
+  icon:
+  mac: 6C:AD:F8:57:16:CA
+  name: chromecasts enheder
+  picture:
+  track: false
+  vendor: AzureWave Technology Inc.
+
+stue_tv:
+  hide_if_away: false
+  icon:
+  mac: C4:8E:8F:55:CD:19
+  name: Stue TV
+  picture:
+  track: false
+  vendor: Hon Hai Precision Ind. Co.,Ltd.
+
+d5daa9aa09d6e145a4d11a0cf6caa5da:
+  hide_if_away: false
+  icon:
+  mac: 00:00:00:00:00:00
+  name: d5daa9aa-09d6-e145-a4d1-1a0cf6caa5da
+  picture:
+  track: false
+  vendor: XEROX CORPORATION
+
+overvagning:
+  hide_if_away: false
+  icon:
+  mac: 00:23:63:23:44:E4
+  name: "Overv\xE5gning"
+  picture:
+  track: false
+  vendor: Zhuhai Raysharp Technology Co.,Ltd
+
+raspberry_pi3:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:AA:C2:8D
+  name: raspberry pi3
+  picture:
+  track: false
+  vendor: Raspberry Pi Foundation
+
+arduino_wifi:
+  hide_if_away: false
+  icon:
+  mac: 5C:CF:7F:1A:F9:46
+  name: Arduino wifi
+  picture:
+  track: false
+  vendor: Espressif Inc.
+
+nikolaj_nexus:
+  hide_if_away: false
+  icon:
+  mac: 64:BC:0C:80:0C:F5
+  name: Nikolaj Nexus
+  picture:
+  track: false
+  vendor: LG Electronics (Mobile Communications)
+
+huawei_p8_lite:
+  hide_if_away: false
+  icon:
+  mac: B0:89:00:92:EF:99
+  name: HUAWEI P8 lite
+  picture:
+  track: false
+  vendor: HUAWEI TECHNOLOGIES CO.,LTD
+
+kditp01:
+  hide_if_away: false
+  icon:
+  mac: 60:F1:89:18:8A:5C
+  name: KDIT-P01
+  picture:
+  track: false
+  vendor: Murata Manufacturing Co., Ltd.
+
+sjsurface0160:
+  hide_if_away: false
+  icon:
+  mac: BC:83:85:1D:35:58
+  name: SJSURFACE0160
+  picture:
+  track: false
+  vendor: Microsoft Corporation
+
+62504fa5c7b9590634a962485986e899:
+  hide_if_away: false
+  icon:
+  mac: 90:2E:1C:74:86:B4
+  name: 62504fa5c7b9590634a962485986e899
+  picture:
+  track: false
+  vendor: Intel Corporate
+
+nikolajarbejdspc:
+  hide_if_away: false
+  icon:
+  mac: 28:ED:6A:65:AE:53
+  name: Nikolaj-ArbejdsPC
+  picture:
+  track: false
+  vendor: unknown

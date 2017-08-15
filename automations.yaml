@@ -1,0 +1,35 @@
+- action:
+  - service: tts.google_say
+    entity_id:
+    - media_player.kkken
+    data:
+      entity_id: media_player.kkken
+      language: da
+      message: Velkommen hjem
+  id: '1495468644621'
+  alias: Velkommen hjem besked
+  condition: []
+  initial_state: 'off'
+  trigger:
+    platform: state
+    entity_id: device_tracker.fuglphoenix_nexus5x, device_tracker.nexus5xkaren
+    from: not_home
+    to: home
+- action:
+  - service: media_player.volume_set
+    data:
+      entity_id: media_player.kkken
+      volume_level: 0.4
+  - service: tts.google_say
+    data:
+      entity_id: media_player.kkken
+      language: da
+      message: "Nikolaj er p\xE5 vej hjem"
+  id: '1495468644627'
+  alias: fyraften
+  condition: []
+  initial_state: 'on'
+  trigger:
+  - entity_id: device_tracker.fuglphoenix_nexus5x
+    from: Arbejde(Nikolaj)
+    platform: state

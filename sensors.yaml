@@ -1,0 +1,64 @@
+  - platform: speedtest
+    name: speedtest
+    server_id: 4435
+    monitored_conditions:
+#      - ping
+      - download
+      - upload
+  - platform: yr
+    name: vejr
+    monitored_conditions:
+      - temperature
+      - symbol
+      - precipitation
+      - windSpeed
+      - pressure
+      - windDirection
+      - humidity
+  - platform: rest
+    resource: !secret zigbee_api
+    method: GET
+    name: "ZigBee lights"
+    value_template: '{{value_json.lights}}'
+  - platform: rest
+    resource: !secret zigbee_api
+    method: GET
+    name: "ZigBee sensors"
+    value_template: '{{value_json.sensors}}'
+  - platform: rest
+    resource: http://10.0.0.9/temperature
+    method: GET
+    name: "Arduino Temperature"
+    value_template: '{{float(value_json.temperature)}}'
+    unit_of_measurement: '°C'
+    scan_interval: 60
+
+ # - platform: mqtt
+ #   name: placering Nikolaj
+ #   state_topic: "homeassistant/sensor/placering_nikolaj/state"
+
+  - platform: google_travel_time
+    name: Transport tid for Nikolaj bil
+    api_key: !secret google_maps_api_key
+    origin: device_tracker.fuglphoenix_nexus5x
+    destination: zone.Home
+  - platform: google_travel_time
+    name: Transport tid for Nikolaj offentlig
+    api_key: !secret google_maps_api_key
+    origin: device_tracker.fuglphoenix_nexus5x
+    destination: zone.Home
+    mode: transit
+
+  - platform: haveibeenpwned
+    email:
+      - !secret nikolaj_email
+      - !secret karen_email
+
+  # - platform: template
+  #   sensors:
+  #     template_calendar:
+  #       value_template: >
+  #         {{ strptime(states.calendar.privat_kalender.attributes.start_time, "%Y-%m-%d %H:%M:%S").strftime("%A kl. %H:%M") }}:
+  #         {{ states.calendar.privat_kalender.attributes.message }}
+  #       friendly_name: Begivenheder
+  #       unit_of_measurement: ''

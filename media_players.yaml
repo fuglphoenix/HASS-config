@@ -1,0 +1,17 @@
+  - platform: braviatv
+    host: 10.0.0.15
+    name: Sony stue TV
+  - platform: cast
+  - platform: universal
+    name: chromecast audio
+    children:
+      - media_player.garage
+      - media_player.kkken
+      - media_player.toilet
+      - media_player.hele_huset
+  - platform: universal
+    name: TV
+    children:
+    - media_player.sony_stue_tv
+    - media_player.stue_tv
+    - media_player.tv_vrelse
