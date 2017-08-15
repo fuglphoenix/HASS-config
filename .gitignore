@@ -55,7 +55,6 @@ lib64
 
 # Logs
 *.log
-*.txt
 pip-log.txt
 
 # Unit test / coverage reports
@@ -63,7 +62,6 @@ pip-log.txt
 .tox
 nosetests.xml
 htmlcov/
-.xml
 
 # Translations
 *.mo
@@ -115,3 +113,5 @@ home-assistant_v2.db-wal
 .google.token
 google_calendars.yaml
 zones.yaml
+*.txt
+*.xml
