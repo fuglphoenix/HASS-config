@@ -55,7 +55,7 @@ lib64
 
 # Logs
 *.log
-*Log.txt
+*.txt
 pip-log.txt
 
 # Unit test / coverage reports
@@ -63,7 +63,7 @@ pip-log.txt
 .tox
 nosetests.xml
 htmlcov/
-*.xml
+.xml
 
 # Translations
 *.mo
