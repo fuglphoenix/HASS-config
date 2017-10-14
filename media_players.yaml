@@ -1,5 +1,5 @@
   - platform: braviatv
-    host: 10.0.0.15
+    host: 10.0.0.12
     name: Sony stue TV
   - platform: cast
   - platform: universal
@@ -15,3 +15,6 @@
     - media_player.sony_stue_tv
     - media_player.stue_tv
     - media_player.tv_vrelse
+  #- platform: gpmdp
+  #  host: 10.0.0.45
+  #  name: Google Music

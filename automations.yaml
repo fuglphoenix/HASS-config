@@ -33,3 +33,71 @@
   - entity_id: device_tracker.fuglphoenix_nexus5x
     from: Arbejde(Nikolaj)
     platform: state
+- action:
+  - alias: set volume
+    data:
+      entity_id: media_player.toilet
+      volume_level: 0.3
+    service: media_player.volume_set
+  - alias: afspil p4
+    data:
+      entity_id: media_player.toilet
+      media_content_id: http://live-icy.gss.dr.dk/A/A12H.mp3
+      media_content_type: audio/mp3
+    service: media_player.play_media
+  alias: "start radio badev\xE6relse"
+  condition: []
+  initial_state: 'on'
+  id: '1503060814079'
+  trigger:
+  - event_data:
+      entity_id: zwave.lys_badevrelse
+      scene_id: 24
+    event_type: zwave.scene_activated
+    platform: event
+- action:
+  - alias: stop musik
+    data:
+      entity_id: media_player.toilet
+    service: media_player.turn_off
+  alias: "stop musik badev\xE6relse"
+  condition: []
+  initial_state: 'on'
+  id: '1503062499907'
+  trigger:
+  - event_data:
+      entity_id: zwave.lys_badevrelse
+      scene_id: 26
+    event_type: zwave.scene_activated
+    platform: event
+- action:
+  - alias: heal
+    data: {}
+    service: zwave.heal_network
+  alias: z wave heal
+  condition: []
+  id: '1503085831671'
+  trigger:
+  - at: 02:00:00
+    platform: time
+- action:
+  - alias: set volume
+    data:
+      entity_id: media_player.kkken
+      volume_level: 0.3
+    service: media_player.volume_set
+  - alias: afspil BEAT
+    data:
+      entity_id: media_player.kkken
+      media_content_id: http://live-icy.gss.dr.dk/A/A29H.mp3
+      media_content_type: audio/mp3
+    service: media_player.play_media
+  alias: wallmote
+  condition: []
+  id: '1503332914673'
+  trigger:
+  - event_data:
+      entity_id: zwave.wallmote
+      scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event

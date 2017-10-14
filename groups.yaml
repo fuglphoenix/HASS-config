@@ -34,6 +34,9 @@ automation:
   entities:
     - automation.velkommen_hjem_besked
     - automation.fyraften
+    - automation.start_radio_badevrelse
+    - automation.stop_musik_badevrelse
+    - automation.z_wave_heal
 Dev:
   view: yes
   name: developer
@@ -76,23 +79,23 @@ radio:
 lys:
   name: lyskilder
   entities:
-  - light.dimmer_2_level
-  - sensor.dimmer_2_power
-  - sensor.dimmer_2_energy
+  - light.lys_badevrelse_level
+  - sensor.lys_badevrelse_power
+  - sensor.lys_badevrelse_energy
 kalender:
   name: Kalender
 unknown:
   name: ikke identificerede funktioner
   entities:
-  - light.dimmer_2_level_2
-  - sensor.dimmer_2_power_2
-  - sensor.dimmer_2_alarm_level
-  - sensor.dimmer_2_alarm_type
-  - sensor.dimmer_2_exporting
-  - sensor.dimmer_2_heat
-  - sensor.dimmer_2_power_management
-  - sensor.dimmer_2_sourcenodeid
-  - sensor.dimmer_2_system
+  - light.lys_badevrelse_level_2
+  - sensor.lys_badevrelse_power_2
+  - sensor.lys_badevrelse_alarm_level
+  - sensor.lys_badevrelse_alarm_type
+  - sensor.lys_badevrelse_exporting
+  - sensor.lys_badevrelse_heat
+  - sensor.lys_badevrelse_power_management
+  - sensor.lys_badevrelse_sourcenodeid
+  - sensor.lys_badevrelse_system
   - switch.wallmote_switch
   - sensor.wallmote_alarm_level
   - sensor.wallmote_alarm_type
@@ -102,7 +105,7 @@ zwave:
   name: Zwave
   entities:
   - zwave.wallmote
-  - zwave.dimmer_2
+  - zwave.lys_badevrelse
   - zwave.zwave_controller
 zigbee:
   name: zigbee

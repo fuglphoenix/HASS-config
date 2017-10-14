@@ -159,3 +159,48 @@ nikolajarbejdspc:
   picture:
   track: false
   vendor: unknown
+
+sjsurface0160_2:
+  hide_if_away: false
+  icon:
+  mac: 00:24:9B:1B:25:D7
+  name: SJSURFACE0160
+  picture:
+  track: false
+  vendor: Action Star Enterprise Co., Ltd.
+
+136a7725605855d3bcfacffa4b26807a:
+  hide_if_away: false
+  icon:
+  mac: 54:60:09:FA:3D:F8
+  name: 136a7725-6058-55d3-bcfa-cffa4b26807a
+  picture:
+  track: false
+  vendor: Google, Inc.
+
+chromecastaudio:
+  hide_if_away: false
+  icon:
+  mac: 54:60:09:FB:10:F8
+  name: chromecast-audio
+  picture:
+  track: false
+  vendor: Google, Inc.
+
+e6613217ded975e5413dd73bd663aa11:
+  hide_if_away: false
+  icon:
+  mac: 54:60:09:FA:58:3A
+  name: e6613217-ded9-75e5-413d-d73bd663aa11
+  picture:
+  track: false
+  vendor: Google, Inc.
+
+sjsurface0169:
+  hide_if_away: false
+  icon:
+  mac: 98:5F:D3:E7:E0:FA
+  name: SJSURFACE0169
+  picture:
+  track: false
+  vendor: Microsoft Corporation

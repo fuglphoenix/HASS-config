@@ -26,7 +26,7 @@
     name: "ZigBee sensors"
     value_template: '{{value_json.sensors}}'
   - platform: rest
-    resource: http://10.0.0.9/temperature
+    resource: http://10.0.0.7/temperature
     method: GET
     name: "Arduino Temperature"
     value_template: '{{float(value_json.temperature)}}'
@@ -57,7 +57,7 @@
   # - platform: template
   #   sensors:
   #     template_calendar:
-  #       value_template: >
+  #       value_template: 
   #         {{ strptime(states.calendar.privat_kalender.attributes.start_time, "%Y-%m-%d %H:%M:%S").strftime("%A kl. %H:%M") }}:
   #         {{ states.calendar.privat_kalender.attributes.message }}
   #       friendly_name: Begivenheder

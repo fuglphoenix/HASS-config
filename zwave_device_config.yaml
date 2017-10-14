@@ -1,3 +1,39 @@
 zwave._:
   ignored: false
   polling_intensity: 1
+sensor.lys_badevrelse_alarm_level:
+  ignored: true
+  polling_intensity: 0
+sensor.lys_badevrelse_alarm_type:
+  ignored: true
+  polling_intensity: 0
+sensor.lys_badevrelse_exporting:
+  ignored: true
+  polling_intensity: 0
+sensor.lys_badevrelse_heat:
+  ignored: true
+  polling_intensity: 0
+light.lys_badevrelse_level_2:
+  ignored: true
+  polling_intensity: 0
+sensor.lys_badevrelse_power_2:
+  ignored: true
+  polling_intensity: 0
+sensor.lys_badevrelse_sourcenodeid:
+  ignored: true
+  polling_intensity: 0
+sensor.lys_badevrelse_system:
+  ignored: true
+  polling_intensity: 0
+sensor.wallmote_alarm_level:
+  ignored: true
+  polling_intensity: 0
+sensor.wallmote_alarm_type:
+  ignored: true
+  polling_intensity: 0
+sensor.wallmote_sourcenodeid:
+  ignored: true
+  polling_intensity: 0
+sensor.lys_badevrelse_power_management:
+  ignored: true
+  polling_intensity: 0
