@@ -75,7 +75,7 @@ radio:
   - input_select.radio_station
   - input_select.chromecast_radio
   - script.minradio
-  - input_slider.volume_radio
+  - input_number.volume_radio
 lys:
   name: lyskilder
   entities:

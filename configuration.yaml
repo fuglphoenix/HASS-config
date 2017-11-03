@@ -34,6 +34,10 @@ zwave:
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
 
+recorder:
+  purge_interval: 7
+  purge_keep_days: 14
+  db_url: !secret db_url
 # Enables support for tracking state changes over time.
 history:
   include:
@@ -83,7 +87,7 @@ mqtt:
   username: !secret mqtt_user
   password: !secret mqtt_password
   discovery: true
-  #discovery_prefix: owntracks
+  # #discovery_prefix: owntracks
 
 google:
   client_id: !secret google_api_id
@@ -91,7 +95,7 @@ google:
 
 http:
   # Uncomment this to add a password (recommended!)
-  api_password: 6zRSXvYZI9
+  api_password: !secret http_api_pw
   # Uncomment this if you are using SSL or running in Docker etc
   server_port: 443
   trusted_networks:
@@ -153,9 +157,10 @@ input_select:
     initial: Stue
     icon: mdi:speaker-wireless
 
-#service: tts.snak_dansk
-#data_template:
+# service: tts.snak_dansk
+# data_template:
 #    tts.google_say: {{"message":"", "language":"da", "entity_id":"media_player.kkken"}}
+map:
 
 zone:
   name: Home

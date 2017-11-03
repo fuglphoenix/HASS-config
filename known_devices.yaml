@@ -4,7 +4,7 @@ fuglphoenix_nexus5x:
   #mac: 64:BC:0C:80:0C:F5
   name: Nikolaj
   track: true
-  picture: https://lh3.googleusercontent.com/-KvxgR6cZ8Lk/AAAAAAAAAAI/AAAAAAAAB6k/zB-PUG8Xuuo/photo.jpg
+  picture: !secret nikolaj_image
   #gravatar: fuglphoenix@gmail.com
   vendor: LG Electronics (Mobile Communications)
 
@@ -12,7 +12,7 @@ nexus5xkaren:
   hide_if_away: false
   mac: 64:BC:0C:80:1D:E4
   name: Karen
-  picture: https://yt3.ggpht.com/-WUjLk6ulRsE/AAAAAAAAAAI/AAAAAAAAAAA/jUumh4X1lp0/s900-c-k-no-mo-rj-c0xffffff/photo.jpg
+  picture: !secret karen_image
   track: true
   vendor: LG Electronics (Mobile Communications)
 
@@ -204,3 +204,12 @@ sjsurface0169:
   picture:
   track: false
   vendor: Microsoft Corporation
+
+e08930365d814755ae100146f6d5ff33:
+  hide_if_away: false
+  icon:
+  mac: 00:A0:C6:EB:5C:6F
+  name: e0893036-5d81-4755-ae10-0146f6d5ff33
+  picture:
+  track: false
+  vendor: unknown
